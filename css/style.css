@@ -102,7 +102,9 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 400px
+	width: 400px;
+	margin: 0 21px;
+	box-shadow: 0 0 10px 10px rgb(231, 231, 231);
 }
 
 .card h6 {
@@ -137,7 +139,8 @@ button {
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 100%;
-	padding: 24px 31px;
+	height: 255px;
+	padding: 24px 31px 0 31px;
 }
 
 .proposal p {
@@ -150,14 +153,10 @@ button {
 	color: #2b87dc;
 }
 
-.proposal input[type=checkbox] {
-	display: none;
-}
-
 input[type="checkbox"]:checked, 
 input[type="checkbox"]:not(:checked) {
     position: absolute;
-    /* left: -9999px; */
+    left: -9999px;
 }
 
 input[type="checkbox"]:checked + label, 
@@ -203,11 +202,22 @@ input[type="checkbox"]:not(:checked) + label:after {
     width: 13px;
     height: 7px;
     border-radius: 1px;
-    border-left: 2.5px solid #e145a3;
-    border-bottom: 2.5px solid #e145a3;
+    border-left: 2.5px solid #000000;
+    border-bottom: 2.5px solid #000000;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+.proposal>p:nth-of-type(6) {
+	margin-bottom: 0;
+}
+
+.details {
+	font-size: 1.5rem !important;
+	letter-spacing: 1.8px;
+	margin: 3px 0 24px 0 !important;
+}
+
