@@ -268,7 +268,7 @@ input[type="checkbox"]:not(:checked) + label:after {
 	font-size: 1.8rem;
 }
 
-.offers>.card-section>.card {
+.offers>.card-section>.card, .benefits>.card-section>.card {
 	box-shadow: none;
 	background-color: none;
 	border: none;
@@ -296,4 +296,48 @@ input[type="checkbox"]:not(:checked) + label:after {
 
 .offers>div:nth-child(2).card-section>div>button:hover {
 	background-color: #87d9dd;
+}
+
+.benefits>.title {
+	margin: 54px 0 4px 0;
+}
+
+.benefits>div:nth-child(2) {
+	display: inline-flex;
+	/* justify-content: space-around; */
+	justify-content: center;
+}
+
+.benefits>.card-section {
+	padding-bottom: 10px;
+}
+
+.benefits>.card-section>.card {
+	display: inline-flex;
+	justify-content: center;
+	justify-content: center;
+	width: auto;
+	margin: 0 23px;
+}
+
+.fa-star {
+	font-size: 2rem;
+	margin-bottom: 24px;
+}
+
+.benefits>div:nth-child(1)>h2 {
+	font-size: 3.8rem;
+}
+
+.benefits>.card-section>.card>p:nth-child(2) {
+	font-size: 1.8rem;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 13px;
+}
+
+.benefits>.card-section>.card>p:nth-child(3) {
+	text-align: center;
+	line-height: 2.3rem;
+	letter-spacing: -0.5px;
 }
