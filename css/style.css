@@ -20,15 +20,21 @@ html, body  {
 	max-width: 1600px;
 	height: 100vh;
 	margin: 0 auto;
-	/* border: 2px solid #bababa; */
 }
 
 header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	width: 100%;
+	background-color: #ffffff;
 	border-bottom: 2px solid #bababa;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 h1 {
@@ -75,6 +81,10 @@ button:hover {
 .fa-angle-left {
 	transform: translateY(4px);
 	margin-right: 6px;
+}
+
+main>section:nth-child(1) {
+	margin-top: 100px;
 }
 
 /* Card section */
@@ -380,35 +390,49 @@ input[type="checkbox"]:not(:checked) + label:after {
 }
 
 footer {
+	position: fixed;
+	z-index: 5;
+	bottom: 0;
+	width: 100%;
+	background-color: #ffffff;
+	border-top: 2px solid #bababa;
+}
+
+.footer-wrapper {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	border-top: 2px solid #bababa;
+
 }
 
-footer>div:nth-child(1) {
+.footer-wrapper>div:nth-child(1) {
 	font-size: 1.4rem;
 	margin-left: 42px;
 }
 
-footer>div:nth-child(1)>p {
+.footer-wrapper>div:nth-child(1)>p {
 	font-size: 1.4rem;
 	color: #bababa;
+	margin: 0;
 }
 
-footer>div:nth-child(2)>ul>li {
+.footer-wrapper>div:nth-child(2)>ul {
+	margin: 0;
+}
+
+.footer-wrapper>div:nth-child(2)>ul>li {
 	display: inline-block;
 	font-size: 1.4rem;
-	margin: 27px 9px;
+	margin: 27px 0px;
 	color: #bababa;
 }
 
-footer>div:nth-child(2)>ul>li>a {
+.footer-wrapper>div:nth-child(2)>ul>li>a {
 	text-decoration: none;
 	color: #bababa;
 }
 
-footer>div:nth-child(2)>ul {
+.footer-wrapper>div:nth-child(2)>ul {
 	transform: translateX(-68px)
 }
