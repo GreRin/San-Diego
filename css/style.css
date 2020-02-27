@@ -47,6 +47,14 @@ button {
 	letter-spacing: 1.5px;
 	border: none;
 	background: none;
+	outline: none !important;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #bababa;
+	transition: 0.5s;
+	border-color: #bababa;
 }
 
 .fa-user::before, .fa-angle-left::before {
@@ -222,9 +230,21 @@ input[type="checkbox"]:not(:checked) + label:after {
 	color: #2b87dc;
 }
 
+.digital:hover {
+	color: #ffffff;
+	background-color: #2b87dc;
+	border-color: #2b87dc;
+}
+
 .print-digital {
 	color: #1ab0b9;
 	border-color: #1ab0b9;
+}
+
+.print-digital:hover {
+	color: #ffffff;
+	border-color: #1ab0b9;
+	background-color: #1ab0b9;
 }
 
 .special-offer {
@@ -232,3 +252,48 @@ input[type="checkbox"]:not(:checked) + label:after {
 	border-color: #3a55af;
 }
 
+.special-offer:hover {
+	color: #ffffff;
+	border-color: #3a55af;
+	background-color: #3a55af;
+}
+
+.title-offers {
+	display: flex;
+	justify-content: center;
+	margin: 29px;
+}
+
+.title-offers h4 {
+	font-size: 1.8rem;
+}
+
+.offers>.card-section>.card {
+	box-shadow: none;
+	background-color: none;
+	border: none;
+}
+
+.offers>div:nth-child(2).card-section {
+	padding: 0 0 35px 0;
+	border-bottom: 1px solid #bababa;
+}
+
+.offers>div:nth-child(2).card-section>div>h6 {
+	margin: 5px 0;
+}
+
+.offers>div:nth-child(2).card-section>div>p {
+	font-size: 1.8rem;
+	margin: 13px 0 35px 0;
+}
+
+.offers>div:nth-child(2).card-section>div>button {
+	color: #ffffff;
+	background-color: #1ab0b9;
+	border: none;
+}
+
+.offers>div:nth-child(2).card-section>div>button:hover {
+	background-color: #87d9dd;
+}
