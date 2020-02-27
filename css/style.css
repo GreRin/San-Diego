@@ -376,8 +376,39 @@ input[type="checkbox"]:not(:checked) + label:after {
 	padding: 8px 36px;
 	color: #000000;
 	border-color: #000000;
+	margin-bottom: 58px;
 }
 
 footer {
-	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 2px solid #bababa;
+}
+
+footer>div:nth-child(1) {
+	font-size: 1.4rem;
+	margin-left: 42px;
+}
+
+footer>div:nth-child(1)>p {
+	font-size: 1.4rem;
+	color: #bababa;
+}
+
+footer>div:nth-child(2)>ul>li {
+	display: inline-block;
+	font-size: 1.4rem;
+	margin: 27px 9px;
+	color: #bababa;
+}
+
+footer>div:nth-child(2)>ul>li>a {
+	text-decoration: none;
+	color: #bababa;
+}
+
+footer>div:nth-child(2)>ul {
+	transform: translateX(-68px)
 }
