@@ -292,16 +292,18 @@ input[type="checkbox"]:not(:checked) + label:after {
 	font-size: 1.8rem;
 }
 
+.offers>div:nth-child(2).card-section {
+	display: flex;
+	align-items: center;
+	padding: 0 0 35px 0;
+	border-bottom: 1px solid #bababa;
+}
+
 .offers>.card-section>.card, .benefits>.card-section>.card {
 	box-shadow: none;
 	background-color: none;
 	border: none;
 	margin: 0 75px;
-}
-
-.offers>div:nth-child(2).card-section {
-	padding: 0 0 35px 0;
-	border-bottom: 1px solid #bababa;
 }
 
 .offers>div:nth-child(2).card-section>div>h6 {
@@ -319,6 +321,7 @@ input[type="checkbox"]:not(:checked) + label:after {
 	color: #ffffff;
 	background-color: #1ab0b9;
 	border: none;
+	width: 160px;
 }
 
 .offers>div:nth-child(2).card-section>div>button:hover {
@@ -462,11 +465,23 @@ footer {
 		align-items: center;
 		justify-content: space-around;
 	}
+
+	.offers>.card-section>.card {
+		margin: 0 10px;
+	}
+
+	.offers>.card-section>.card>button {
+		width: 160px;
+	}
 }
 
 @media (max-width: 768px) {
 	button {
 		padding: 5px 38px;
+	}
+
+	.offers>div:nth-child(2)>.card-section {
+		flex-direction: column;
 	}
 
 	.benefits>.card-section, .offers>.card-section {
