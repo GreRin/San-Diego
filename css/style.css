@@ -137,8 +137,6 @@ main>section:nth-child(1) {
 
 .card>img {
 	width: 100%;
-	/* position: absolute;
-	top: 0; */
 }
 
 .card h6 {
@@ -335,6 +333,10 @@ input[type="checkbox"]:not(:checked) + label:after {
 	margin: 54px 0 4px 0;
 }
 
+.benefits>.card-section {
+	padding: 30px 0 0 0;
+}
+
 .benefits>.card-section>.row-direction {
 	display: flex;
 	align-items: center;
@@ -385,6 +387,33 @@ input[type="checkbox"]:not(:checked) + label:after {
 	color: #bababa;
 }
 
+.carousel-item-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.description {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	text-align: center;
+}
+
+.description p {
+	font-size: 1.8rem;
+	color: #ffffff;
+}
+
+.description h2 {
+	font-size: 4.5rem;
+		color: #ffffff;
+}
+
+/* Some-text section */
 .some-text {
 	display: flex;
 	justify-content: center;
@@ -487,6 +516,18 @@ footer {
 	}
 }
 
+@media (max-width: 992px) {
+	.description p {
+		font-size: 1.8rem;
+		color: #ffffff;
+	}
+	
+	.description h2 {
+		font-size: 2.5rem;
+			color: #ffffff;
+	}
+}
+
 @media (max-width: 856px) {
 	.card-wrapper {
 		flex-direction: column;
@@ -539,5 +580,15 @@ footer {
 
 	.hidden-header>.header-buttons {
 		margin: 10px;
+	}
+
+	.description p {
+		font-size: 0.5rem;
+		color: #ffffff;
+	}
+	
+	.description h2 {
+		font-size: 1rem;
+			color: #ffffff;
 	}
 }
