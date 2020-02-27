@@ -309,7 +309,7 @@ input[type="checkbox"]:not(:checked) + label:after {
 }
 
 .benefits>.card-section {
-	padding-bottom: 10px;
+	padding-bottom: 28px;
 }
 
 .benefits>.card-section>.card {
