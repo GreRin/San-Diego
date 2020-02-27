@@ -24,6 +24,7 @@ html, body  {
 
 header {
 	position: fixed;
+	max-width: 1600px;
 	z-index: 5;
 	top: 0;
 	width: 100%;
@@ -37,8 +38,13 @@ header {
 	align-items: center;
 }
 
+.hidden-header {
+	display: none;
+}
+
 h1 {
 	margin: 18px 0;
+	text-align: center;
 	font-family: 'OldOakAP';
 	font-weight: 500;
 	font-style: normal;
@@ -84,7 +90,7 @@ button:hover {
 }
 
 main>section:nth-child(1) {
-	margin-top: 100px;
+	margin-top: 124px;
 }
 
 /* Card section */
@@ -100,6 +106,7 @@ main>section:nth-child(1) {
 	font-size: 2.9rem;
 	margin-bottom: 16px;
 	letter-spacing: 0.3px;
+	text-align: center;
 }
 
 .title h4 {
@@ -110,7 +117,7 @@ main>section:nth-child(1) {
 .card-section {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	/* align-items: stretch; */
 	width: 100%;
 	padding: 30px 0;
 }
@@ -120,9 +127,15 @@ main>section:nth-child(1) {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 400px;
+	max-width: 400px;
 	margin: 0 21px;
 	box-shadow: 0 0 10px 10px rgb(231, 231, 231);
+}
+
+.card>img {
+	width: 100%;
+	/* position: absolute;
+	top: 0; */
 }
 
 .card h6 {
@@ -141,6 +154,7 @@ main>section:nth-child(1) {
 .card>p:nth-of-type(2) {
 	font-size: 1.6rem;
 	margin-bottom: 25px;
+	text-align: center;
 }
 
 .start-now {
@@ -157,7 +171,7 @@ main>section:nth-child(1) {
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 100%;
-	height: 255px;
+	min-height: 255px;
 	padding: 24px 31px 0 31px;
 }
 
@@ -282,6 +296,7 @@ input[type="checkbox"]:not(:checked) + label:after {
 	box-shadow: none;
 	background-color: none;
 	border: none;
+	margin: 0 75px;
 }
 
 .offers>div:nth-child(2).card-section {
@@ -291,11 +306,13 @@ input[type="checkbox"]:not(:checked) + label:after {
 
 .offers>div:nth-child(2).card-section>div>h6 {
 	margin: 5px 0;
+	text-align: center;
 }
 
 .offers>div:nth-child(2).card-section>div>p {
 	font-size: 1.8rem;
 	margin: 13px 0 35px 0;
+	text-align: center;
 }
 
 .offers>div:nth-child(2).card-section>div>button {
@@ -312,22 +329,21 @@ input[type="checkbox"]:not(:checked) + label:after {
 	margin: 54px 0 4px 0;
 }
 
-.benefits>div:nth-child(2) {
-	display: inline-flex;
-	/* justify-content: space-around; */
+.benefits>.card-section>.row-direction {
+	display: flex;
+	align-items: center;
 	justify-content: center;
-}
-
-.benefits>.card-section {
 	padding-bottom: 28px;
 }
 
-.benefits>.card-section>.card {
+.benefits>.card-section>.row-direction>.card {
 	display: inline-flex;
-	justify-content: center;
 	justify-content: center;
 	width: auto;
 	margin: 0 23px;
+	box-shadow: none;
+	background-color: none;
+	border: none;
 }
 
 .fa-star {
@@ -339,19 +355,20 @@ input[type="checkbox"]:not(:checked) + label:after {
 	font-size: 3.8rem;
 }
 
-.benefits>.card-section>.card>p:nth-child(2) {
+.benefits>.card-section>.row-direction>.card>p:nth-child(2) {
 	font-size: 1.8rem;
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 13px;
 }
 
-.benefits>.card-section>.card>p:nth-child(3) {
+.benefits>.card-section>.row-direction>.card>p:nth-child(3) {
 	text-align: center;
 	line-height: 2.3rem;
 	letter-spacing: -0.5px;
 }
 
+/* Carousel */
 .carousel-control-next, .carousel-control-prev {
 	width: 100px;
 }
@@ -367,6 +384,7 @@ input[type="checkbox"]:not(:checked) + label:after {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	margin-bottom: 65px;
 }
 
 .some-text>h4 {
@@ -386,11 +404,11 @@ input[type="checkbox"]:not(:checked) + label:after {
 	padding: 8px 36px;
 	color: #000000;
 	border-color: #000000;
-	margin-bottom: 58px;
 }
 
 footer {
 	position: fixed;
+	max-width: 1600px;
 	z-index: 5;
 	bottom: 0;
 	width: 100%;
@@ -424,7 +442,7 @@ footer {
 .footer-wrapper>div:nth-child(2)>ul>li {
 	display: inline-block;
 	font-size: 1.4rem;
-	margin: 27px 0px;
+	margin: 23px 9px;
 	color: #bababa;
 }
 
@@ -435,4 +453,54 @@ footer {
 
 .footer-wrapper>div:nth-child(2)>ul {
 	transform: translateX(-68px)
+}
+
+@media (max-width: 1200px) {
+	.row-direction {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+@media (max-width: 768px) {
+	button {
+		padding: 5px 38px;
+	}
+
+	.benefits>.card-section, .offers>.card-section {
+		flex-direction: column;
+	}
+
+	.some-text {
+		margin-bottom: 150px;
+	}
+
+	.footer-wrapper>div:nth-child(2)>ul>li {
+		display: block;
+		text-align: center;
+		margin: 5px 0;
+	}
+}
+
+@media (max-width: 620px) {
+	.header-wrapper {
+		display: none;
+	}
+
+	.hidden-header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.hidden-header>h1 {
+		margin: 10px 0 0 0;
+	}
+
+	.hidden-header>.header-buttons {
+		margin: 10px;
+	}
 }
