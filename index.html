@@ -17,7 +17,7 @@
 
 	<body>
 		<div class="sign-in-wrapper">
-			<div class="wrapper">
+			<div class="wrapper sign-in-wrapper">
 				<header>
 					<div class="header-wrapper">
 						<button id="back"><i class="fas fa-angle-left"></i>BACK</button>
@@ -211,16 +211,34 @@
 	
 	
 				</main>
-				<div class="sign-in">
+				<div class="sign-in hidden" id="form">
 					<form class="form" action="#">
-						<label for="name-5">Ваше имя</label>
-						<input class="form-input" id="name-5" type="text">
-						<label for="phone-5">Номер телефона</label>
-						<input class="form-input" id="phone-5" type="text">
-						<label for="message-5">Сообщение</label>
-						<textarea class="form-input" id="message-5" rows="5"></textarea>
-						<button class="form-btn button" type="submit">оставьте заявку</button>
-						<small>Приедем в день обращения</small>
+						<div></div>
+						<div>
+							<h4>Digital</h4>
+							<p>99&cent 4 weeks only then $1.99/week</p>
+						</div>
+						<div>
+							<div>
+								<h4>Create an account</h4>
+								<p>Already have an account? <span>LOG IN</span></p>
+							</div>
+							<div>
+								<button class="facebook">FACEBOOK<i class="fab fa-facebook-f"></i></button>
+								<button class="google">GOOGLE
+									<img src="https://img.icons8.com/color/28/000000/google-logo.png">
+								</button>
+							</div>
+						</div>
+						<label for="email">Email</label>
+						<input class="email" id="email" type="text">
+						<label for="password">Password</label>
+						<div>
+							<input class="password" id="password" type="text">
+							<button></button>
+						</div>
+						<p>Price: $0.99</p>
+						<button class="form-btn button" type="submit">CONTINUE</button>
 					</form>
 				</div>
 				<footer>
@@ -247,7 +265,7 @@
 					<h2>Your order</h2>
 					<i class="fas fa-shopping-cart"></i>
 				</div>
-				<h4>Digital access</h4>
+				<h4>Digital Access</h4>
 				<p>Unlimited access to website and the smartphone and tablet apps. $0.99</p>
 				<p>Sales tax may apply</p>
 				<p>Total: $0.99</p>
