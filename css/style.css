@@ -14,12 +14,21 @@ html, body  {
 	font-family: 'Roboto', sans-serif;
 }
 
+.sign-in-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 1600px;
+	height: 100vh;
+	margin: 0 auto;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	max-width: 1600px;
 	height: 100vh;
-	margin: 0 auto;
+	
 }
 
 header {
@@ -490,6 +499,74 @@ footer {
 .footer-wrapper>div:nth-child(2)>ul {
 	transform: translateX(-68px)
 }
+
+/* Aside section */
+.aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	max-width: 360px;
+	width: 100%;
+	padding: 0 60px;
+	background-color: #f0f0f0;
+}
+
+.aside-header {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #bababa;
+	width: 100%;
+}
+
+.aside-header h2 {
+	font-size: 2.6rem;
+	margin: 20px 0;
+}
+
+.aside-header .fa-shopping-cart {
+	font-size: 2.6rem;
+}
+
+.aside h4 {
+	font-size: 1.8rem;
+	margin: 50px 0;
+}
+
+.aside p {
+	font-size: 1.5rem;
+	margin-bottom: 40px;
+}
+
+.aside p:last-child {
+	font-weight: bold;
+}
+
+/* Authorization section */
+.sign-in {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 1240px;
+	height: 100vh;
+	margin: 70px 0;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-form {
+	max-width: 1240px;
+}
+
+.footer-form {
+	max-width: 1240px;
+}
+
 
 @media (max-width: 1200px) {
 	main>section:nth-child(1)>.card-section {
