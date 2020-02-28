@@ -261,23 +261,23 @@ input[type="checkbox"]:not(:checked) + label:after {
 	border-color: #2b87dc;
 }
 
-.print-digital {
+.print-digital, h6.print-digital {
 	color: #1ab0b9;
 	border-color: #1ab0b9;
 }
 
-.print-digital:hover {
+button.print-digital:hover {
 	color: #ffffff;
 	border-color: #1ab0b9;
 	background-color: #1ab0b9;
 }
 
-.special-offer {
+.special-offer, h6.special-offer {
 	color: #3a55af;
 	border-color: #3a55af;
 }
 
-.special-offer:hover {
+button.special-offer:hover {
 	color: #ffffff;
 	border-color: #3a55af;
 	background-color: #3a55af;
@@ -310,6 +310,7 @@ input[type="checkbox"]:not(:checked) + label:after {
 .offers>div:nth-child(2).card-section>div>h6 {
 	margin: 5px 0;
 	text-align: center;
+	color: #1ab0b9;;
 }
 
 .offers>div:nth-child(2).card-section>div>p {
@@ -591,4 +592,9 @@ footer {
 		font-size: 1rem;
 			color: #ffffff;
 	}
+}
+
+/* JS hide sections */
+.hidden {
+	display: none !important;
 }
