@@ -23,3 +23,8 @@ back.addEventListener('click', (event) => {
 	form.classList.add('hidden');
 	signIn.removeEventListener('click', (event), true);
 }, true);
+
+// function show() {
+// 	password = document.getElementById('password');
+// 	console.log('Hello');
+// }
