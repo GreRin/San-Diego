@@ -13,16 +13,19 @@ $('#continue').on('click', function() {
 	$("#errorMessage").text("");
 
 	$.ajax({
-		url: 'ajax/mail.php',
+		url: 'http://foo.com',
+		// url: 'ajax/mail.php',
 		type: 'POST',
 		cache: false,
 		data: { 'email': emailContext, 'password': passwordContext },
 		dataType: 'html',
 		beforeSend: function() {
+			$('#myModal').modal('show');
+			$('#successMessage').text("Something goes wrong... Try to sign in again");
 			$('#continue').prop('disabled', true)
 		},
-		success: function(data) {
-			cosole.log(data);
+		success: function() {
+			$('#successMessage').text("YOU successfully SIGNED IN");
 			$('#myModal').modal('show');
 			$('#continue').prop('disabled', false)
 		}
