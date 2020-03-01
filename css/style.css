@@ -674,6 +674,12 @@ form>input, form>div>input {
 	border: none;
 	border-bottom: 1px solid #757474;
 	outline: none;
+	background: transparent;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: inset 0 0 0 50px rgba(255, 255, 255, 0.924); /* цвет вашего фона */
+	-webkit-text-fill-color: #000000; /* цвет текста */
 }
 
 form>div>button {
@@ -701,11 +707,15 @@ button.continue {
 	cursor: pointer;
 	background-color: #2b87dc;
 	color: #ffffff;
-	margin-bottom: 100px;
+	margin-bottom: 20px;
 }
 
 button.continue:hover {
 	background-color: #6ba3d8;
+}
+
+#errorMessage {
+	color: rgb(255, 0, 0);
 }
 
 .header-form {

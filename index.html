@@ -212,7 +212,7 @@
 	
 				</main>
 				<div class="sign-in hidden" id="form">
-					<form class="form" action="#">
+					<form class="form">
 						<div class="range-slider">
 							<ul id="progressbar">
 								<li class="active">Create an account<i class="fas fa-map-marker-alt"></i></li>  
@@ -237,14 +237,15 @@
 							</div>
 						</div>
 						<label for="email">Email</label>
-						<input class="email" id="email" type="text" placeholder="Email">
+						<input class="email" name="email" id="emailId" type="text" placeholder="Email">
 						<label for="password">Password</label>
 						<div>
-							<input class="password" id="password" type="password" placeholder="Password">
-							<button class="show" id='show'>Show</button>
+							<input class="password" id="passwordId" name="password" type="password" placeholder="Password">
+							<button class="show" id='show' type="button">Show</button>
 						</div>
 						<p>Price: $0.99</p>
-						<button class="continue " type="submit">CONTINUE</button>
+						<button class="continue" id="continue" type="button">CONTINUE</button>
+						<p id="errorMessage"></p>
 					</form>
 				</div>
 				<footer>
@@ -277,14 +278,30 @@
 				<p>Total: $0.99</p>
 			</aside>
 		</div>
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+		<!-- Popup window -->
+		<div class="modal" id="myModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Sign In</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>YOU successfully "SIGNED IN"</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		<script src="./js/index.js"></script>
-		<script>
-			// function showPassword() {
-				// password = document.getElementById('password');
-			// 	console.log('Hello');
-			// }
-		</script>
+		<script src="./js/formMail.js"></script>
 	</body>
 </html>

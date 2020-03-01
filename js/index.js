@@ -52,9 +52,17 @@ back.addEventListener('touchstart', (event) => {
 	signIn.removeEventListener('touchstart', (event), true);
 }, true);
 
-password = document.getElementById('password');
-show = document.getElementById('show');
+const password = document.getElementById('passwordId');
+const show = document.getElementById('show');
 show.addEventListener('click', (event) => {
 	(password.getAttribute('type') === 'text') ? password.setAttribute('type', 'password') : password.setAttribute('type', 'text');
 	password.removeEventListener('click', (event), true);
 }, true);
+
+// const continueBtn = document.getElementById('continue');
+// continueBtn.addEventListener('click', (event) => {
+// 	const emailText = document.getElementById('emailId');
+// 	const passwordText = document.getElementById('passwordId');
+// 	console.log(emailText);
+// 	continueBtn.removeEventListener('click', (event), true);
+// }, true);
