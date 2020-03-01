@@ -18,7 +18,7 @@ signIn.addEventListener('click', (event) => {
 	signIn.removeEventListener('click', (event), true);
 }, true);
 
-signIn.addEventListener('touchstart', (event) => {
+document.getElementById('sign-in-hidden').addEventListener('touchstart', (event) => {
 	main[0].classList.add('hidden');
 	aside[0].classList.remove('hidden');
 	header[0].classList.add('header-form');
@@ -41,7 +41,7 @@ back.addEventListener('click', (event) => {
 	signIn.removeEventListener('click', (event), true);
 }, true);
 
-back.addEventListener('touchstart', (event) => {
+document.getElementById('back-hidden').addEventListener('touchstart', (event) => {
 	main[0].classList.remove('hidden');
 	aside[0].classList.add('hidden');
 	header[0].classList.remove('header-form');
@@ -58,11 +58,3 @@ show.addEventListener('click', (event) => {
 	(password.getAttribute('type') === 'text') ? password.setAttribute('type', 'password') : password.setAttribute('type', 'text');
 	password.removeEventListener('click', (event), true);
 }, true);
-
-// const continueBtn = document.getElementById('continue');
-// continueBtn.addEventListener('click', (event) => {
-// 	const emailText = document.getElementById('emailId');
-// 	const passwordText = document.getElementById('passwordId');
-// 	console.log(emailText);
-// 	continueBtn.removeEventListener('click', (event), true);
-// }, true);

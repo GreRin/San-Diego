@@ -34,7 +34,7 @@ html, body  {
 header {
 	display: flex;
 	justify-content: center;
-	position: static;
+	position: fixed;
 	max-width: 1600px;
 	z-index: 5;
 	top: 0;
@@ -899,6 +899,14 @@ button.continue:hover {
 }
 
 @media(max-width: 576px) {
+	.hidden-header>h1 {
+    margin: 10px 0 0 0;
+	}
+
+	.hidden-header>.header-buttons {
+    margin: 0px;
+	}
+
 	form>div:nth-child(1) {
     height: auto;
 	}
@@ -988,7 +996,7 @@ button.continue:hover {
 
 	button.continue {
 		width: 100px;
-		margin: 20px 0;
+		margin: 10px 0;
 		padding: 10px;
 		font-size: 1.2rem;
 	}
