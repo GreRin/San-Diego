@@ -22,10 +22,8 @@ $('#continue').on('click', function() {
 			$('#continue').prop('disabled', true)
 		},
 		success: function(data) {
-			console.log(data);
-			
+			cosole.log(data);
 			$('#myModal').modal('show');
-
 			$('#continue').prop('disabled', false)
 		}
 	});
