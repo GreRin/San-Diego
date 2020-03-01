@@ -58,3 +58,8 @@ show.addEventListener('click', (event) => {
 	(password.getAttribute('type') === 'text') ? password.setAttribute('type', 'password') : password.setAttribute('type', 'text');
 	password.removeEventListener('click', (event), true);
 }, true);
+
+show.addEventListener('touchstart', (event) => {
+	(password.getAttribute('type') === 'text') ? password.setAttribute('type', 'password') : password.setAttribute('type', 'text');
+	password.removeEventListener('touchstart', (event), true);
+}, true);
