@@ -24,7 +24,9 @@ back.addEventListener('click', (event) => {
 	signIn.removeEventListener('click', (event), true);
 }, true);
 
-// function show() {
-// 	password = document.getElementById('password');
-// 	console.log('Hello');
-// }
+password = document.getElementById('password');
+show = document.getElementById('show');
+show.addEventListener('click', (event) => {
+		(password.getAttribute('type') === 'text') ? password.setAttribute('type', 'password') : password.setAttribute('type', 'text');
+		password.removeEventListener('click', (event), true);
+	}, true);
